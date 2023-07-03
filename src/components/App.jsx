@@ -31,7 +31,7 @@ export class App extends Component {
       ];
       return this.setState({ ...this.state, contacts: arrayCont });
     } else {
-      alert(' Kontakt jest już w książce telefonicznej!!!');
+      alert(`${data.name} is already in contacts.`);
     }
   };
 
@@ -64,7 +64,7 @@ export class App extends Component {
       <div className="App">
         <h1>Phonebook</h1>
         <ContactForm onSubmitData={this.formSubmitHandler} />
-        <h1>Contacts</h1>
+        <h2>Contacts</h2>
         <Filter setFilterToState={this.setFilterToState} />
         <ContactList
           contacts={this.filterArr(this.state.contacts)}
