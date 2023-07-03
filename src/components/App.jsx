@@ -31,7 +31,7 @@ export class App extends Component {
       ];
       return this.setState({ ...this.state, contacts: arrayCont });
     } else {
-      alert(' Контакт вже є у телефонній книзі!!!');
+      alert(' Kontakt jest już w książce telefonicznej!!!');
     }
   };
 
